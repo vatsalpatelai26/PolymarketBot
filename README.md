@@ -1,3 +1,11 @@
+##### PROMPT ####
+create local website i can run that does the following: i want to be able to track polymarket traders and have their trades show up. I want a flask server locally in plain html css js that shows the trades. Make sure there’s a python script that fetches the trades each minute AND then adds to local sqlite db
+
+I also want it to show all the info about the person (their profile pic their username etc) on the trader side
+
+tell me exactly how to run all this, asssume i dont have anything setup yet
+
+
 # Polymarket Trader Tracker (Flask + SQLite)
 
 This repo now contains a local web app that tracks selected Polymarket traders, stores their trades in SQLite, and shows trader profile details (username, profile image, bio, etc.) plus trade history.
