@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polymarket Trader Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <header>
+      <h1>Polymarket Trader Tracker</h1>
+      <p>Live view of tracked trader profiles and latest trades from your local SQLite database.</p>
+    </header>
+
+    <main>
+      <section class="panel trader-panel">
+        <h2>Tracked Traders</h2>
+        <div id="trader-list" class="trader-list"></div>
+      </section>
+
+      <section class="panel trade-panel">
+        <h2 id="trade-title">Trades</h2>
+        <div id="trade-list" class="trade-list"></div>
+      </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
