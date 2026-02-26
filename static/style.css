@@ -1,0 +1,81 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #111827;
+  color: #f3f4f6;
+}
+
+header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #374151;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  min-height: calc(100vh - 110px);
+}
+
+.panel {
+  padding: 1rem;
+}
+
+.trader-panel {
+  border-right: 1px solid #374151;
+}
+
+.trader-card {
+  border: 1px solid #374151;
+  background: #1f2937;
+  border-radius: 10px;
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+}
+
+.trader-card.active {
+  border-color: #60a5fa;
+}
+
+.profile {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.profile img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #4b5563;
+}
+
+.meta {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.trade-row {
+  border-bottom: 1px solid #374151;
+  padding: 0.85rem 0;
+}
+
+.trade-row h4 {
+  margin: 0 0 0.3rem;
+}
+
+.trade-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.45rem;
+  font-size: 0.92rem;
+}
+
+.empty {
+  color: #9ca3af;
+}
